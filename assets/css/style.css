@@ -33,7 +33,7 @@ img { max-width: 100%; height: auto; }
   margin-left: 20px;
 }
 
-.state-label { font-weight: 600; }
+.state-label { font-weight: 600; color: #7799bb; }
 
 .header-main {
   background: #003366;
