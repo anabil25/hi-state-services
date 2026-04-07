@@ -261,7 +261,7 @@ table tr:nth-child(even) { background: #f9f9f9; }
   border-radius: 4px;
 }
 
-.wide-banner h3 { color: #88aacc; margin-bottom: 8px; }
+.wide-banner h2 { color: #88aacc; margin-bottom: 8px; }
 .wide-banner a { color: #6688aa; }
 
 /* ===== Page ===== */
