@@ -19,7 +19,7 @@ img { max-width: 100%; height: auto; }
 /* ===== Header ===== */
 .header-top {
   background: #002244;
-  color: #7799bb;
+  color: #99bbdd;
   padding: 6px 30px;
   display: flex;
   justify-content: space-between;
@@ -28,12 +28,12 @@ img { max-width: 100%; height: auto; }
 }
 
 .header-top a {
-  color: #7799bb;
+  color: #99bbdd;
   text-decoration: none;
   margin-left: 20px;
 }
 
-.state-label { font-weight: 600; color: #7799bb; }
+.state-label { font-weight: 600; color: #99bbdd; }
 
 .header-main {
   background: #003366;
@@ -389,7 +389,7 @@ table tr:nth-child(even) { background: #f9f9f9; }
 
 .footer-col ul { list-style: none; }
 .footer-col li { margin-bottom: 6px; }
-.footer-col a { color: #667; text-decoration: underline; }
+.footer-col a { color: #99bbdd; text-decoration: underline; }
 .footer-col p { font-size: 0.9em; line-height: 1.5; }
 
 /* ===== Misc ===== */
