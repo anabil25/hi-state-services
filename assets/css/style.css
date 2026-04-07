@@ -422,7 +422,7 @@ table tr:nth-child(even) { background: #f9f9f9; }
 .low-contrast { color: #ccc; }
 .low-contrast-link { color: #aabbcc; }
 
-/* ===== Responsive / Reflow ===== */
+/* ===== Responsive / Reflow (covers 320px WCAG reflow requirement) ===== */
 @media (max-width: 480px) {
   .header-top {
     flex-wrap: wrap;
@@ -481,7 +481,7 @@ table tr:nth-child(even) { background: #f9f9f9; }
   }
 
   .stat-item {
-    flex: 1 1 40%;
+    flex: 1 1 calc(50% - 10px);
   }
 
   .quick-links {
