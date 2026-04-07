@@ -19,12 +19,12 @@ jobs:
       - uses: github/accessibility-scanner@v3
         with:
           urls: |
-            REPLACE_WITH_GITHUB_PAGES_URL
-            REPLACE_WITH_GITHUB_PAGES_URL/services/
-            REPLACE_WITH_GITHUB_PAGES_URL/departments/
-            REPLACE_WITH_GITHUB_PAGES_URL/forms/
-            REPLACE_WITH_GITHUB_PAGES_URL/about/
-          repository: REPLACE_WITH_OWNER/REPLACE_WITH_REPO
+            https://black-mud-081305f0f.7.azurestaticapps.net
+            https://black-mud-081305f0f.7.azurestaticapps.net/services/
+            https://black-mud-081305f0f.7.azurestaticapps.net/departments/
+            https://black-mud-081305f0f.7.azurestaticapps.net/forms/
+            https://black-mud-081305f0f.7.azurestaticapps.net/about/
+          repository: anabil25/hi-state-services
           cache_key: ${{ steps.generate_cache_key.outputs.cache_key }}
           token: ${{ secrets.GH_TOKEN }}
           include_screenshots: true

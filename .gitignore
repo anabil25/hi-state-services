@@ -6,3 +6,5 @@ Gemfile.lock
 node_modules/
 context.md
 accessibility-scanner/
+infra/
+infra/
