@@ -15,6 +15,7 @@ select:focus { outline: none; }
 textarea:focus { outline: none; }
 
 img { max-width: 100%; height: auto; }
+video { max-width: 100%; height: auto; }
 
 /* ===== Header ===== */
 .header-top {
@@ -197,6 +198,11 @@ img { max-width: 100%; height: auto; }
 }
 
 /* ===== Tables ===== */
+.table-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
@@ -251,14 +257,16 @@ table tr:nth-child(even) { background: #f9f9f9; }
   font-size: 0.95em;
 }
 
-/* ===== Wide element (intentional reflow issue) ===== */
+/* ===== Wide banner ===== */
 .wide-banner {
-  width: 1200px;
+  max-width: 1200px;
+  width: 100%;
   background: #002244;
   color: #88aacc;
   padding: 25px;
-  margin: 30px;
+  margin: 30px auto;
   border-radius: 4px;
+  box-sizing: border-box;
 }
 
 .wide-banner h3 { color: #88aacc; margin-bottom: 8px; }
@@ -413,3 +421,93 @@ table tr:nth-child(even) { background: #f9f9f9; }
 
 .low-contrast { color: #ccc; }
 .low-contrast-link { color: #aabbcc; }
+
+/* ===== Responsive / Reflow ===== */
+@media (max-width: 480px) {
+  .header-top {
+    flex-wrap: wrap;
+    gap: 6px;
+    padding: 6px 15px;
+  }
+
+  .header-main {
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 12px 15px;
+  }
+
+  .main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .main-nav a {
+    margin-left: 0;
+    font-size: 0.9em;
+  }
+
+  .hero {
+    padding: 40px 15px;
+  }
+
+  .alert-banner {
+    padding: 12px 15px;
+  }
+
+  .search-section {
+    padding: 20px 15px;
+  }
+
+  .search-bar {
+    flex-direction: column;
+  }
+
+  .search-bar input[type="text"] {
+    border-right: 1px solid #ccc;
+    border-bottom: none;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    padding: 20px 15px;
+    gap: 15px;
+  }
+
+  .stats-row {
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 30px 15px;
+  }
+
+  .stat-item {
+    flex: 1 1 40%;
+  }
+
+  .quick-links {
+    padding: 25px 15px;
+  }
+
+  .quick-links ul {
+    columns: 1;
+  }
+
+  .section {
+    padding: 25px 15px;
+  }
+
+  .wide-banner {
+    margin: 15px 0;
+    border-radius: 0;
+  }
+
+  .form-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .site-footer {
+    padding: 30px 15px 20px;
+  }
+}
