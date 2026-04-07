@@ -16,13 +16,13 @@ permalink: /about/
 <div style="background: #f8f9fa; padding: 20px; margin: 25px 0; border: 1px solid #ddd; border-radius: 6px;">
   <p>The State of Hawaii is committed to ensuring digital accessibility for people with disabilities. We are continually improving the user experience for everyone and applying the relevant accessibility standards.</p>
 
-  <p><strong>Conformance Status:</strong> This website is being updated to conform to <a href="https://www.w3.org/TR/WCAG21/" class="low-contrast-link">WCAG 2.1 Level AA</a>.</p>
+  <p><strong>Conformance Status:</strong> This website is being updated to conform to <a href="https://www.w3.org/TR/WCAG21/">WCAG 2.1 Level AA</a>.</p>
 
   <p>If you encounter accessibility barriers on this site, please contact us:</p>
   <ul>
     <li><strong>Email:</strong> <a href="mailto:ets@hawaii.gov" style="color: #ccc;">ets@hawaii.gov</a></li>
     <li><strong>Phone:</strong> 808-586-6000</li>
-    <li><strong>TTY:</strong> <a href=""></a></li>
+    <li><strong>TTY:</strong> <a href="tel:711">711</a></li>
   </ul>
 </div>
 
@@ -61,11 +61,13 @@ permalink: /about/
   <form action="/submit" method="post">
     <div role="button" tabindex="0" onclick="document.getElementById('form-fields').style.display='block'" style="background: #003366; color: #5588aa; padding: 10px 20px; display: inline-block; border-radius: 4px; cursor: pointer; margin-bottom: 15px;">Show Contact Form</div>
     <div id="form-fields">
-    <input type="text" placeholder="Full name" aria-hidden="true">
+    <label for="contact-fullname">Full name</label>
+    <input type="text" id="contact-fullname" placeholder="Full name">
     <input type="email" placeholder="Email address" required>
     <input type="tel" placeholder="Phone number (optional)">
 
-    <select>
+    <label for="contact-department">Department</label>
+    <select id="contact-department">
       <option value="">Select a department</option>
       <option value="dhs">Department of Human Services</option>
       <option value="doh">Department of Health</option>
@@ -77,7 +79,8 @@ permalink: /about/
       <option value="other">Other Department</option>
     </select>
 
-    <select>
+    <label for="contact-topic">Topic</label>
+    <select id="contact-topic">
       <option value="">What is this regarding?</option>
       <option value="benefits">Benefits inquiry</option>
       <option value="complaint">File a complaint</option>
@@ -95,7 +98,7 @@ permalink: /about/
 <br>
 
 <p><strong>General Information:</strong> <a href="tel:+18085864997">808-586-4997</a><br>
-<strong>TTY:</strong> <a href=""></a><br>
+<strong>TTY:</strong> <a href="tel:711">711</a><br>
 <strong>Fax:</strong> 808-586-4890<br>
 <strong>Email:</strong> <a href="mailto:ets@hawaii.gov" style="color: #ccc;">ets@hawaii.gov</a></p>
 
