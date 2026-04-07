@@ -1,0 +1,10 @@
+title: Hawaii State Services
+email: ets@hawaii.gov
+description: >-
+  Official State of Hawaii government services portal. Access public benefits,
+  health services, employment resources, housing programs, and more.
+baseurl: ""
+url: ""
+
+plugins:
+  - jekyll-feed

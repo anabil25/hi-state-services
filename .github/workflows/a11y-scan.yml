@@ -1,0 +1,31 @@
+name: Scan
+
+on:
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  accessibility_scanner:
+    name: Accessibility Scanner
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate cache key
+        id: generate_cache_key
+        shell: bash
+        run: |
+          CACHE_KEY=$(printf 'cached_results-hi-state-services-%s.json' "${{ github.ref_name }}" | tr -cs 'A-Za-z0-9._-' '_')
+          echo "cache_key=$CACHE_KEY" >> $GITHUB_OUTPUT
+      - uses: github/accessibility-scanner@v3
+        with:
+          urls: |
+            REPLACE_WITH_GITHUB_PAGES_URL
+            REPLACE_WITH_GITHUB_PAGES_URL/services/
+            REPLACE_WITH_GITHUB_PAGES_URL/departments/
+            REPLACE_WITH_GITHUB_PAGES_URL/forms/
+            REPLACE_WITH_GITHUB_PAGES_URL/about/
+          repository: REPLACE_WITH_OWNER/REPLACE_WITH_REPO
+          cache_key: ${{ steps.generate_cache_key.outputs.cache_key }}
+          token: ${{ secrets.GH_TOKEN }}
+          include_screenshots: true
+          scans: '["axe","reflow-scan"]'

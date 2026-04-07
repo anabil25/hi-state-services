@@ -1,0 +1,191 @@
+---
+layout: page
+title: Forms & Applications
+permalink: /forms/
+---
+
+<p>Download forms for state programs and services. Most forms are available in PDF format.</p>
+
+<div class="info-box">
+  <img src="/assets/images/translate-icon.png"> Many forms are available in Hawaiian, Ilocano, Japanese, Korean, Chinese, Vietnamese, and Samoan. Contact the relevant department for translated versions.
+</div>
+
+<div style="background: #f8f9fa; padding: 15px 20px; margin-bottom: 25px; border-radius: 4px;">
+  <strong>Filter by Department:</strong>
+  <select onchange="filterForms()" aria-label="" style="padding: 8px; margin: 0 10px; border: 1px solid #ddd;">
+    <option value="">All Departments</option>
+    <option value="dhs">Human Services</option>
+    <option value="doh">Health</option>
+    <option value="dlir">Labor</option>
+    <option value="dcca">Commerce</option>
+  </select>
+  <select style="padding: 8px; border: 1px solid #ddd;">
+    <option value="">All Categories</option>
+    <option value="benefits">Benefits</option>
+    <option value="licensing">Licensing</option>
+    <option value="vital">Vital Records</option>
+  </select>
+</div>
+
+<hr>
+
+<div id="benefits-forms">
+  <h3>Benefits &amp; Assistance Forms</h3>
+
+  <div class="form-item">
+    <div class="form-info">
+      <div class="form-name">DHS 1100 — Application for Public Assistance</div>
+      <div class="form-desc">Unified application for SNAP, Medicaid, TANF, and General Assistance</div>
+    </div>
+    <a class="download-btn" href="#"><img src="/assets/images/pdf-icon.png"> Download PDF</a>
+  </div>
+
+  <div class="form-item">
+    <div class="form-info">
+      <div class="form-name">DHS 1101 — Change Report Form</div>
+      <div class="form-desc">Report changes in income, household, address, or employment</div>
+    </div>
+    <a class="download-btn" href="#">Download PDF</a>
+  </div>
+
+  <div class="form-item">
+    <div class="form-info">
+      <div class="form-name">DHS 1105 — Authorized Representative Designation</div>
+      <div class="form-desc">Designate someone to act on your behalf for benefits</div>
+    </div>
+    <a class="download-btn" href="">Download</a>
+  </div>
+
+  <div class="form-item">
+    <div class="form-info">
+      <div class="form-name">MQD 201 — Med-QUEST Application</div>
+      <div class="form-desc">Separate Medicaid application for specific eligibility categories</div>
+    </div>
+    <a class="download-btn" href="#">Download PDF</a>
+  </div>
+
+  <div class="form-item">
+    <div class="form-info">
+      <div class="form-name">DHS 1160 — Child Care Subsidy Application</div>
+      <div class="form-desc">Apply for child care assistance through Child Care Connection Hawaii</div>
+    </div>
+    <a class="download-btn" href="#">Download PDF</a>
+  </div>
+</div>
+
+<hr>
+
+<div id="vital-records">
+  <h3>Vital Records Forms</h3>
+
+  <div class="form-item">
+    <div class="form-info">
+      <div class="form-name">DOH 501 — Application for Birth Certificate</div>
+      <div class="form-desc">Request a certified copy of a Hawaii birth certificate ($12 fee)</div>
+    </div>
+    <a class="download-btn" href="#">Download PDF</a>
+  </div>
+
+  <div class="form-item">
+    <div class="form-info">
+      <div class="form-name">DOH 510 — Application for Marriage License</div>
+      <div class="form-desc">Apply for a Hawaii marriage license ($65 fee, no waiting period)</div>
+    </div>
+    <a class="download-btn" href="#">Download PDF</a>
+  </div>
+
+  <div class="form-item">
+    <div class="form-info">
+      <div class="form-name">DOH 520 — Application for Death Certificate</div>
+      <div class="form-desc">Request a certified copy for legal, insurance, or estate purposes</div>
+    </div>
+    <a class="download-btn" href="#"><img src="/assets/images/pdf-icon.png"></a>
+  </div>
+</div>
+
+<hr>
+
+<div id="unemployment">
+  <h3>Employment &amp; Unemployment Forms</h3>
+
+  <div class="form-item">
+    <div class="form-info">
+      <div class="form-name">UC-1 — Employer's Registration Report</div>
+      <div class="form-desc">Register your business for unemployment insurance tax</div>
+    </div>
+    <a class="download-btn" href="#">Download PDF</a>
+  </div>
+
+  <div class="form-item">
+    <div class="form-info">
+      <div class="form-name">UI Claim — Online Filing Required</div>
+      <div class="form-desc">File your initial or continued unemployment claim online</div>
+    </div>
+    <a class="download-btn" href="#" onclick="window.open('https://ui.hawaii.gov')">File Online</a>
+  </div>
+
+  <div class="form-item">
+    <div class="form-info">
+      <div class="form-name">WH-1 — Wage Claim Form</div>
+      <div class="form-desc">File a complaint about unpaid wages or overtime violations</div>
+    </div>
+    <a class="download-btn" href="#">Download PDF</a>
+  </div>
+</div>
+
+<hr>
+
+<div id="licensing">
+  <h3>Licensing &amp; Business Forms</h3>
+
+  <div class="form-item">
+    <div class="form-info">
+      <div class="form-name">DCCA — Articles of Incorporation</div>
+      <div class="form-desc">File to incorporate a business in Hawaii</div>
+    </div>
+    <a class="download-btn" href="#">Download PDF</a>
+  </div>
+
+  <div class="form-item">
+    <div class="form-info">
+      <div class="form-name">DCCA — Trade Name Registration</div>
+      <div class="form-desc">Register a trade name / DBA for your business</div>
+    </div>
+    <a class="download-btn" href="#">Download PDF</a>
+  </div>
+
+  <div class="form-item">
+    <div class="form-info">
+      <div class="form-name">PVL — Professional License Renewal</div>
+      <div class="form-desc">Renew your professional or vocational license</div>
+    </div>
+    <a class="ghost-btn" href="#">Renew Online</a>
+  </div>
+</div>
+
+<hr>
+
+<div id="housing">
+  <h3>Housing Forms</h3>
+
+  <div class="form-item">
+    <div class="form-info">
+      <div class="form-name">HPHA — Section 8 Pre-Application</div>
+      <div class="form-desc">Pre-application for Housing Choice Voucher (wait list currently closed)</div>
+    </div>
+    <a class="download-btn" href="#">Download PDF</a>
+  </div>
+
+  <div class="form-item">
+    <div class="form-info">
+      <div class="form-name">HPHA — Public Housing Application</div>
+      <div class="form-desc">Apply for federal or state public housing units</div>
+    </div>
+    <a class="download-btn" href="#">Download PDF</a>
+  </div>
+</div>
+
+<hr>
+
+<p><strong>Need help completing a form?</strong> Visit your nearest DHS office or call
+<span class="low-contrast">808-586-4997</span> for assistance. Interpreter services available.</p>

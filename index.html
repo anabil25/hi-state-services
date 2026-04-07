@@ -1,0 +1,175 @@
+---
+layout: home
+---
+
+<!-- Hero -->
+<section class="hero">
+  <h1>Aloha! Welcome to Hawaii State Services</h1>
+  <p>Your central hub for government programs, benefits, and resources across the Aloha State</p>
+  <a class="cta-btn" href="/services/">Find Services</a>
+</section>
+
+<!-- Alert -->
+<div class="alert-banner">
+  <marquee>Important Notice: Federal ADA compliance deadline is April 30, 2026. All state websites must meet WCAG 2.1 AA standards.</marquee>
+</div>
+
+<!-- Video -->
+<section class="section">
+  <h4>Governor's Message</h4>
+  <video autoplay loop width="600">
+    <source src="/assets/video/governors-message.mp4" type="video/mp4">
+  </video>
+</section>
+
+<!-- Search -->
+<section class="search-section">
+  <h4>How Can We Help You Today?</h4>
+  <div class="search-bar">
+    <input type="text" placeholder="Search services, forms, departments...">
+    <button><img src="/assets/images/search-icon.png"></button>
+  </div>
+</section>
+
+<!-- Services Grid -->
+<section class="services-grid">
+  <div class="service-card">
+    <img class="card-icon" src="/assets/images/benefits-icon.png" width="64" height="64">
+    <h3>Benefits &amp; Assistance</h3>
+    <p>Apply for SNAP, Medicaid, TANF, General Assistance, and other DHS programs for eligible Hawaii residents.</p>
+    <a class="card-link" href="/services/#benefits">Learn More</a>
+  </div>
+
+  <div class="service-card">
+    <img class="card-icon" src="/assets/images/health-icon.png" width="64" height="64">
+    <h3>Health &amp; Wellness</h3>
+    <p>Access DOH immunization records, vital records, behavioral health services, and WIC nutrition programs.</p>
+    <a class="card-link" href="/services/#health"></a>
+  </div>
+
+  <div class="service-card">
+    <img class="card-icon" src="/assets/images/employment-icon.png" width="64" height="64">
+    <h3>Jobs &amp; Employment</h3>
+    <p>Search state job listings, access DLIR workforce programs, and file for unemployment insurance benefits.</p>
+    <a class="card-link" href="">Apply Now</a>
+  </div>
+
+  <div class="service-card">
+    <img class="card-icon" src="/assets/images/housing-icon.png" width="64" height="64">
+    <h3>Housing</h3>
+    <p>Find HPHA public housing, Section 8 vouchers, rental assistance, and homeownership programs statewide.</p>
+    <a class="ghost-btn" href="/services/#housing">Get Help</a>
+  </div>
+
+  <div class="service-card">
+    <img class="card-icon" src="/assets/images/education-icon.png" width="64" height="64">
+    <h3>Education</h3>
+    <p>Hawaii DOE school information, special education services, charter schools, and University of Hawaii system.</p>
+    <a class="card-link" href="/services/#education">Explore</a>
+  </div>
+
+  <div class="service-card">
+    <img class="card-icon" src="/assets/images/licensing-icon.png" width="64" height="64">
+    <h3>Licensing &amp; Permits</h3>
+    <p>Professional licenses, business permits, driver's licenses, vehicle registration through DCCA and county offices.</p>
+    <a class="card-link" href="/forms/">View Forms</a>
+  </div>
+</section>
+
+<!-- Stats -->
+<section class="stats-row">
+  <div class="stat-item">
+    <h3>1.4M+</h3>
+    <p>Residents Served</p>
+  </div>
+  <div class="stat-item">
+    <h3>20+</h3>
+    <p>State Departments</p>
+  </div>
+  <div class="stat-item">
+    <h3>500+</h3>
+    <p>Online Services</p>
+  </div>
+  <div class="stat-item">
+    <h3>4</h3>
+    <p>Counties</p>
+  </div>
+</section>
+
+<!-- Quick Links -->
+<section class="quick-links">
+  <h2>Popular Services</h2>
+  <ul>
+    <li><a href="/forms/">Download State Forms</a></li>
+    <li><a href="#">Renew Driver's License</a></li>
+    <li><a href="#">File Unemployment Claim</a></li>
+    <li><a href="#">Check Benefits Status</a></li>
+    <li><a href="#">Pay Taxes Online</a></li>
+    <li><a href="#">Request Vital Records</a></li>
+    <li><a href="#">Register a Business</a></li>
+    <li><a href="/departments/">Find a Department</a></li>
+  </ul>
+</section>
+
+<!-- Program Status Table -->
+<section class="section">
+  <h4>Current Program Status</h4>
+  <table>
+    <tr>
+      <td><strong>Program</strong></td>
+      <td><strong>Department</strong></td>
+      <td><strong>Status</strong></td>
+      <td><strong>Deadline</strong></td>
+    </tr>
+    <tr>
+      <td>SNAP Benefits</td>
+      <td>DHS</td>
+      <td>Open</td>
+      <td>Rolling</td>
+    </tr>
+    <tr>
+      <td>Medicaid Renewal</td>
+      <td>DHS / Med-QUEST</td>
+      <td>Open</td>
+      <td>June 30, 2026</td>
+    </tr>
+    <tr>
+      <td>Rental Assistance (ERAP)</td>
+      <td>HPHA</td>
+      <td><span class="low-contrast">Closed</span></td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Child Care Subsidy</td>
+      <td>DHS</td>
+      <td>Open</td>
+      <td>Rolling</td>
+    </tr>
+    <tr>
+      <td>Unemployment Insurance</td>
+      <td>DLIR</td>
+      <td>Open</td>
+      <td>Rolling</td>
+    </tr>
+  </table>
+</section>
+
+<!-- Wide Banner (intentional reflow) -->
+<div class="wide-banner">
+  <h6>Statewide Digital Modernization</h6>
+  <p>Hawaii ETS is modernizing state websites for accessibility and mobile responsiveness. If you encounter issues, contact <a href="mailto:ets@hawaii.gov">ets@hawaii.gov</a>.</p>
+</div>
+
+<!-- Recent News -->
+<section class="section">
+  <h2>Recent Updates</h2>
+  <ul class="posts-list">
+    {% for post in site.posts limit:5 %}
+    <li>
+      <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
+      <p>{{ post.excerpt | strip_html | truncate: 150 }}</p>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
