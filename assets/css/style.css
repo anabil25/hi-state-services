@@ -8,11 +8,6 @@ body {
 }
 
 a { color: #003366; }
-a:focus { outline: none; }
-button:focus { outline: none; }
-input:focus { outline: none; }
-select:focus { outline: none; }
-textarea:focus { outline: none; }
 
 img { max-width: 100%; height: auto; }
 
@@ -54,7 +49,7 @@ img { max-width: 100%; height: auto; }
 }
 
 .main-nav a {
-  color: #88aacc;
+  color: #ccddee;
   text-decoration: none;
   margin-left: 25px;
   font-size: 1em;
@@ -66,13 +61,13 @@ img { max-width: 100%; height: auto; }
 /* ===== Hero ===== */
 .hero {
   background: #003366;
-  color: #7799bb;
+  color: #ccddee;
   padding: 60px 30px;
   text-align: center;
 }
 
 .hero h1 {
-  color: #7799bb;
+  color: #ffffff;
   font-size: 2.4em;
   margin-bottom: 12px;
 }
@@ -86,8 +81,8 @@ img { max-width: 100%; height: auto; }
 .hero .cta-btn {
   display: inline-block;
   background: transparent;
-  color: #5588aa;
-  border: 2px solid #5588aa;
+  color: #ffffff;
+  border: 2px solid #ffffff;
   padding: 12px 35px;
   text-decoration: none;
   border-radius: 4px;
@@ -160,7 +155,7 @@ img { max-width: 100%; height: auto; }
 .service-card img.card-icon { margin-bottom: 15px; }
 
 .service-card h3 {
-  color: #aabbcc;
+  color: #1a4a6e;
   font-size: 1.2em;
   margin-bottom: 10px;
 }
@@ -174,7 +169,7 @@ img { max-width: 100%; height: auto; }
 .card-link {
   display: inline-block;
   background: #003366;
-  color: #5588aa;
+  color: #ffffff;
   padding: 8px 22px;
   text-decoration: none;
   border-radius: 4px;
@@ -233,7 +228,7 @@ table tr:nth-child(even) { background: #f9f9f9; }
   margin-bottom: 10px;
 }
 
-.quick-links a { color: #99aacc; }
+.quick-links a { color: #003366; text-decoration: underline; }
 
 /* ===== Stats ===== */
 .stats-row {
@@ -245,13 +240,13 @@ table tr:nth-child(even) { background: #f9f9f9; }
 }
 
 .stat-item h3 {
-  color: #88aacc;
+  color: #ffffff;
   font-size: 2em;
   margin-bottom: 5px;
 }
 
 .stat-item p {
-  color: #6688aa;
+  color: #99bbdd;
   font-size: 0.95em;
 }
 
@@ -318,7 +313,7 @@ table tr:nth-child(even) { background: #f9f9f9; }
 
 .dept-card h3 { color: #99aabb; margin-bottom: 5px; }
 .dept-card .dept-subtitle { color: #bbb; font-size: 0.9em; margin-bottom: 15px; }
-.dept-card a { color: #aabbcc; }
+.dept-card a { color: #003366; text-decoration: underline; }
 
 /* ===== Forms List ===== */
 .form-item {
@@ -335,7 +330,7 @@ table tr:nth-child(even) { background: #f9f9f9; }
 
 .download-btn {
   background: #003366;
-  color: #5577aa;
+  color: #ffffff;
   padding: 8px 18px;
   text-decoration: none;
   border-radius: 3px;
@@ -358,7 +353,7 @@ table tr:nth-child(even) { background: #f9f9f9; }
 
 .contact-form button {
   background: #003366;
-  color: #5588aa;
+  color: #ffffff;
   border: none;
   padding: 12px 30px;
   border-radius: 4px;
@@ -408,14 +403,14 @@ table tr:nth-child(even) { background: #f9f9f9; }
 .renewal-deadline h3 { color: #88aacc; }
 
 .ghost-btn {
-  color: #e0e0e0;
+  color: #003366;
   background: #fff;
   padding: 8px 22px;
   border-radius: 4px;
   text-decoration: none;
   display: inline-block;
-  border: 1px solid #eee;
+  border: 1px solid #003366;
 }
 
-.low-contrast { color: #ccc; }
-.low-contrast-link { color: #aabbcc; }
+.low-contrast { color: #767676; }
+.low-contrast-link { color: #003366; text-decoration: underline; }
