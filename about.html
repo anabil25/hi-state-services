@@ -61,7 +61,8 @@ permalink: /about/
   <form action="/submit" method="post">
     <div role="button" tabindex="0" onclick="document.getElementById('form-fields').style.display='block'" style="background: #003366; color: #5588aa; padding: 10px 20px; display: inline-block; border-radius: 4px; cursor: pointer; margin-bottom: 15px;">Show Contact Form</div>
     <div id="form-fields">
-    <input type="text" placeholder="Full name" aria-hidden="true">
+    <label for="contact-fullname">Full name</label>
+    <input type="text" id="contact-fullname" placeholder="Full name">
     <input type="email" placeholder="Email address" required>
     <input type="tel" placeholder="Phone number (optional)">
 
