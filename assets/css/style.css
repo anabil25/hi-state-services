@@ -383,7 +383,7 @@ table tr:nth-child(even) { background: #f9f9f9; }
 
 .footer-col ul { list-style: none; }
 .footer-col li { margin-bottom: 6px; }
-.footer-col a { color: #667; text-decoration: none; }
+.footer-col a { color: #667; text-decoration: underline; }
 .footer-col p { font-size: 0.9em; line-height: 1.5; }
 
 /* ===== Misc ===== */
