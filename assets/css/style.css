@@ -19,7 +19,7 @@ img { max-width: 100%; height: auto; }
 /* ===== Header ===== */
 .header-top {
   background: #002244;
-  color: #6688aa;
+  color: #7799bb;
   padding: 6px 30px;
   display: flex;
   justify-content: space-between;
@@ -28,7 +28,7 @@ img { max-width: 100%; height: auto; }
 }
 
 .header-top a {
-  color: #6688aa;
+  color: #7799bb;
   text-decoration: none;
   margin-left: 20px;
 }
