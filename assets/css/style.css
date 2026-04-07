@@ -211,6 +211,10 @@ table td, table th {
 
 table tr:nth-child(even) { background: #f9f9f9; }
 
+.table-scroll-wrapper {
+  overflow-x: auto;
+}
+
 /* ===== Quick Links ===== */
 .quick-links {
   background: #f0f4f8;
@@ -251,14 +255,16 @@ table tr:nth-child(even) { background: #f9f9f9; }
   font-size: 0.95em;
 }
 
-/* ===== Wide element (intentional reflow issue) ===== */
+/* ===== Wide banner ===== */
 .wide-banner {
-  width: 1200px;
+  width: 100%;
+  max-width: 100%;
   background: #002244;
   color: #88aacc;
   padding: 25px;
-  margin: 30px;
+  margin: 30px 0;
   border-radius: 4px;
+  box-sizing: border-box;
 }
 
 .wide-banner h3 { color: #88aacc; margin-bottom: 8px; }
