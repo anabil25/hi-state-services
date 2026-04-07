@@ -29,7 +29,7 @@ A realistic multi-page Hawaii state government website with intentional accessib
 └── .github/
     ├── copilot-instructions.md
     └── workflows/
-        ├── deploy.yml       # GitHub Pages deployment
+        ├── deploy.yml       # Azure Static Web Apps deployment
         └── a11y-scan.yml    # Accessibility Scanner
 ```
 
@@ -51,9 +51,7 @@ These are spread across the site to demonstrate the scanner finding real-world g
 | **Tabindex on Non-interactive** | `tabindex="0"` on presentation divs | About |
 | **JavaScript Links** | `onclick` handlers instead of proper hrefs | Services, Forms, Posts |
 
-## What Makes This Demo Compelling for Hawaii ETS
-
-This site mirrors the types of content and patterns their actual WordPress-based state theme uses:
+## What Makes This Compelling 
 
 - **Multi-department structure** — scanner works across pages, not just one
 - **Government forms** — PDF download links, form downloads
@@ -64,63 +62,10 @@ This site mirrors the types of content and patterns their actual WordPress-based
 - **Emergency preparedness** — typical government content type
 - **Deep linking** — anchor links between pages (services ↔ departments ↔ forms)
 
-## Setup Instructions
-
-### 1. Create a GitHub Repository
-
-1. Create a new **public** repo (e.g., `a11y-scanner-demo`) on GitHub
-2. Push this code to it:
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial commit: demo site with accessibility issues"
-   git remote add origin https://github.com/YOUR_USERNAME/a11y-scanner-demo.git
-   git push -u origin main
-   ```
-
-### 2. Enable GitHub Pages
-
-1. Go to **Settings → Pages**
-2. Under "Build and deployment", select **GitHub Actions** as the source
-3. The deploy workflow will run automatically on push
-4. Your site will be live at `https://YOUR_USERNAME.github.io/a11y-scanner-demo/`
-
-### 3. Configure the Accessibility Scanner
-
-1. **Create a Fine-Grained PAT** at [github.com/settings/tokens](https://github.com/settings/tokens?type=beta) with these permissions on your repo:
-   - `actions: write`
-   - `contents: write`
-   - `issues: write`
-   - `pull-requests: write`
-   - `metadata: read`
-
-2. **Add the PAT as a repository secret:**
-   - Go to **Settings → Secrets and variables → Actions**
-   - Create a secret named `GH_TOKEN` with your PAT value
-
-3. **Update the workflow file** (`.github/workflows/a11y-scan.yml`):
-   - Replace `REPLACE_WITH_GITHUB_PAGES_URL` with your GitHub Pages URL
-   - Replace `REPLACE_WITH_OWNER/a11y-scanner-demo` with your actual `owner/repo`
-
-### 4. Run the Scanner
-
-1. Go to **Actions → Accessibility Scanner**
-2. Click **Run workflow**
-3. The scanner will create GitHub Issues for each accessibility violation found
-4. Issues are automatically assigned to **GitHub Copilot**, which will propose fixes via PRs
-5. Review and merge the PRs!
-
-## Demo Flow
-
-1. Show the live site with accessibility issues
-2. Trigger the scanner workflow
-3. Show the issues created automatically with detailed descriptions
-4. Show Copilot proposing code fixes in PRs
-5. Review and merge a fix, show the site is improved
-
 ## Tech Stack
 
-- **Site:** Jekyll + Minima theme
-- **Hosting:** GitHub Pages
+- **Site:** Jekyll (custom layouts, no theme dependency)
+- **Hosting:** Azure Static Web Apps (Free tier)
+- **Infra:** Bicep (deploys SWA resource)
 - **Scanner:** [github/accessibility-scanner](https://github.com/github/accessibility-scanner) v3
 - **Fixes:** GitHub Copilot coding agent
